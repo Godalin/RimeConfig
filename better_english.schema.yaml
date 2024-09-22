@@ -1,0 +1,19 @@
+# 更好西文: 用於作爲默認的西文輸入法, 前期沒有任何設置
+# 暫時啥都不要有, 就是拿來充當默認英文輸入法的, 鍵入按鍵碼就可以了
+
+schema:
+  schema_id: better_english
+  name: 更好better西文
+  author: Godalin
+  version: "0.0.0"
+  dependencies:
+    - latex
+    - agda_input
+  description: |
+    更好的西文輸入法:
+    好在哪裏呢? 我也不知道
+    - 它可以作爲默認的西文輸入
+    - 它可以輸入 LaTeX, 所以依賴於 rime_latex
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba\

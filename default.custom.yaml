@@ -1,0 +1,36 @@
+# My Rime Preferences
+# encoding: utf-8
+
+patch:
+  # 菜單長度
+  menu/page_size: 5
+  menu/alternative_select_labels: [①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨]
+
+  # 調整輸入方案的快捷鍵。 我想這個快捷鍵應該不會被太多佔用
+  # (但是在 Emacs 中這不是一個好主意, 所以) 我保留 F4
+  switcher/hotkeys:
+    - Shift+Escape
+    - F4
+
+  # 自定義方案選單
+  schema_list:
+    - schema: better_english
+    - schema: double_pinyin
+    #- schema: agda_input
+    - schema: latex
+    #- schema: cangjie5
+      # 但是我還不會用倉頡碼
+    #- schema: luna_pinyin
+    - schema: luna_pinyin_simp
+    #- schema: luna_pinyin_fluency
+    - schema: soutzoe
+    #- schema: wugniu_soutseu
+    #- schema: terra_pinyin
+    #- schema: emoji_suggestion
+
+  # 調整 `shift` 切換中英文輸入的行爲
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Shift_L: commit_code
+      Shift_R: inline_ascii
