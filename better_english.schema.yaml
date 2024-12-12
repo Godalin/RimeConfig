@@ -18,7 +18,6 @@ schema:
 
 engine:
   processors:
-    - ascii_composer
     - recognizer
     - key_binder
     - speller
@@ -46,20 +45,22 @@ key_binder:
   import_preset: default
 
 recognizer:
-  import_preset: default
   patterns:
     # 將下面的模式都映射到 symbol tag, 並且啓用下面的兩張表去查對應的符號
     symbol: "^\\\\(\\D|(\\\\\\d))+$"
 
 speller:
   alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/\\^_-><+-*=()[]{}<>!?@#$&%\"',.:;|`~"
+  initials: '\'
   auto_select: true
+  algebra:
+    - derive/(\d)/\\$1
 
 # the symbols
 
 latex:
   tag: symbol
-  #dictionary: latex
+  dictionary: latex
   prefix: '\'
   enable_sentence: false
   enable_completion: true
@@ -70,7 +71,7 @@ latex:
 
 agda_input:
   tag: symbol
-  # dictionary: agda_input
+  dictionary: agda_input
   prefix: '\'
   enable_sentence: false
   enable_completion: true
