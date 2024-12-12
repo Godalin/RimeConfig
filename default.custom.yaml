@@ -16,16 +16,13 @@ patch:
   schema_list:
     - schema: better_english
     - schema: double_pinyin
+    - schema: moran
     #- schema: agda_input
     - schema: latex
     #- schema: cangjie5
-      # 但是我還不會用倉頡碼
-    #- schema: luna_pinyin
+    # 但是我還不會用倉頡碼
     - schema: luna_pinyin_simp
-    #- schema: luna_pinyin_fluency
     - schema: soutzoe
-    #- schema: wugniu_soutseu
-    #- schema: terra_pinyin
     #- schema: emoji_suggestion
 
   # 調整 `shift` 切換中英文輸入的行爲

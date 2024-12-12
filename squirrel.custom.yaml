@@ -1,6 +1,6 @@
 patch:
   style/+:
-    font_face: "JuliaMono Nerd Font, LXGW WenKai"
+    font_face: "JuliaMono, LXGW WenKai, Open Emoji"
     font_point: 18
     label_font_face: "LXGW WenKai"
     label_font_point: 18

@@ -22,10 +22,10 @@ patch:
   speller/auto_select: true
 
   # 並且在標點階段處理, 這樣的話就可以處理全角和半角, 不用忍受奇怪的候選了
-  punctuator/half_shape:
-    "\\": ["\\"]
-  punctuator/full_shape:
-    "\\": ["、", "＼"]
+  # punctuator/half_shape:
+  #   "\\": ["\\"]
+  # punctuator/full_shape:
+  #   "\\": ["、", "＼"]
 
   engine/+:
     # 加入 latex 的碼錶, 如果我想加入自己的碼錶, 我就應該在這裏加上
@@ -59,3 +59,15 @@ patch:
     user_dict: custom_agda_user
     db_class: tabledb
     tips: "[Agda]"
+
+  switches/@next:
+    name: emoji_suggestion
+    reset: 1
+    states: ["🈚︎", "🈶️"]
+  "engine/filters/@before 0": simplifier@emoji_suggestion
+
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
