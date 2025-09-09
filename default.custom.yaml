@@ -16,7 +16,7 @@ patch:
   schema_list:
     - schema: better_english
     - schema: double_pinyin
-    - schema: moran
+    #- schema: moran
     #- schema: agda_input
     - schema: latex
     #- schema: cangjie5
