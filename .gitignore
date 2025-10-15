@@ -1,0 +1,11 @@
+build
+*.userdb
+user.*
+plum
+*
+!*.gitignore
+!*.custom.yaml
+!better_english.schema.yaml
+!installation.yaml
+!*.conf
+!README.md
