@@ -13,7 +13,7 @@ patch:
 
   # 默認英文標點符號
   switches/@0/reset: 0
-  switches/@3/reset: 1
+  switches/@3/reset: 0
 
   # 設置 LaTeX 輸入結合雙拼輸入 (應當製作一個新的輸入法)
   # 把反斜槓 `\` 加入字母表

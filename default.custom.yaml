@@ -11,6 +11,8 @@ patch:
   switcher/hotkeys:
     - Shift+Escape
     - F4
+    - Control+F4
+    - Control+grave
 
   # 自定義方案選單
   schema_list:

@@ -5,7 +5,7 @@ schema:
   schema_id: better_english
   name: 更好better西文
   author: Godalin
-  version: "0.0.0"
+  version: "0.1"
   dependencies:
     - latex
     - agda_input
@@ -21,7 +21,7 @@ engine:
     - recognizer
     - key_binder
     - speller
-    - punctuator
+    # - punctuator
     - selector
     - navigator
     - express_editor
@@ -38,11 +38,11 @@ engine:
   filters:
     - uniquifier
 
-punctuator:
-  import_preset: default
+# punctuator:
+#   import_preset: default
 
-key_binder:
-  import_preset: default
+# key_binder:
+#   import_preset: default
 
 recognizer:
   patterns:

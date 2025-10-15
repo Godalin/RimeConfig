@@ -9,7 +9,7 @@ patch:
     color_scheme: trinity
     color_scheme_dark: klein
 
-    inline_preedit: true
+    inline_preedit: false
     #candidate_list_layout: linear
     #text_orientation: vertical
 
@@ -53,12 +53,13 @@ patch:
       name: 克莱因蓝⨣黄
       author: Godalin
 
+      red: &red "0xA791FF"
       blue: &blue "0x9F2E00"
       yellow: &yellow "0x17D2FF"
 
       border_color: ""
       text_color: "0x0000FF"
-      preedit_back_color: "0x0000FF"
+      preedit_back_color: *red
       back_color: *blue
       label_color: *yellow
 
@@ -66,7 +67,7 @@ patch:
       comment_text_color: *yellow
 
       hilited_text_color: *blue
-      hilited_back_color: "0x0000FF"
+      hilited_back_color: *red
       hilited_comment_text_color: *blue
 
       hilited_candidate_text_color: *blue
